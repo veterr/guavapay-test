@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  auth:
+    build: auth
+  delivery:
+    build: delivery
+  gateway:
+    build: gateway
+    ports:
+      - "9999:9999"

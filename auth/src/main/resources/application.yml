@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /rest-auth
+
+guavapay:
+  app:
+    jwtExpirationMs: '86400000'
+    jwtSecret: mySecretKey
+spring:
+  datasource:
+    username: pdtkkixjqflcah
+    url: jdbc:postgresql://ec2-52-209-171-51.eu-west-1.compute.amazonaws.com:5432/dfsn5vr5hr2kht
+    password: c587f7361a3c90c7a0c2e0df2ac977c6381c97de0acd7d8d059a5bf03efce269
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: guavapay_test
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: update
+
