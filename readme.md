@@ -3,19 +3,19 @@ To prepare application for PROD you need:
 https://github.com/veterr/guavapay-test/blob/main/auth/src/main/resources/application.yml   
 https://github.com/veterr/guavapay-test/blob/main/core/src/main/resources/application.properties   
 https://github.com/veterr/guavapay-test/blob/main/delivery/src/main/resources/application.yml   <br />
-block spring: datasource:
+block "spring: datasource:"
 2) Start application - it will create necessary tables
 3) Insert into table "roles" records: "ROLE_USER", "ROLE_COURIER", "ROLE_ADMIN" - generate UUID id-s. 
 
 To start in docker compose you need to - 
-1) "clean install" core
-"clean install" auth
-"clean install" delivery
-"clean install" gateway
+1) "clean install" core   
+"clean install" auth   
+"clean install" delivery   
+"clean install" gateway  
 2) Put jars: 
-auth/target/auth-1.0-SNAPSHOT.jar         -> assembly/auth/auth-1.0-SNAPSHOT.jar
-delivery/target/delivery-1.0-SNAPSHOT.jar -> assembly/delivery/delivery-1.0-SNAPSHOT.jar
-gateway/target/gateway-1.0-SNAPSHOT.jar   -> assembly/gateway/gateway-1.0-SNAPSHOT.jar
+auth/target/auth-1.0-SNAPSHOT.jar         -> assembly/auth/auth-1.0-SNAPSHOT.jar  
+delivery/target/delivery-1.0-SNAPSHOT.jar -> assembly/delivery/delivery-1.0-SNAPSHOT.jar  
+gateway/target/gateway-1.0-SNAPSHOT.jar   -> assembly/gateway/gateway-1.0-SNAPSHOT.jar  
 3) Go to /assembly/ folder and do "docker compose up"
 
 I have not yet tested docker-compose assembly, only had time to write the docker-compose descriptor 
