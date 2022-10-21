@@ -1,7 +1,7 @@
 To prepare application for PROD you need: 
-1) Insert postgres credentails into: 
-https://github.com/veterr/guavapay-test/blob/main/auth/src/main/resources/application.yml
-https://github.com/veterr/guavapay-test/blob/main/core/src/main/resources/application.properties
+1) Insert postgres credentails into: \n
+https://github.com/veterr/guavapay-test/blob/main/auth/src/main/resources/application.yml \n
+https://github.com/veterr/guavapay-test/blob/main/core/src/main/resources/application.properties \r\n
 https://github.com/veterr/guavapay-test/blob/main/delivery/src/main/resources/application.yml
 block spring: datasource:
 2) Start application - it will create necessary tables
