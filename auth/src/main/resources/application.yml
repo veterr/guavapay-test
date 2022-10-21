@@ -9,9 +9,9 @@ guavapay:
     jwtSecret: mySecretKey
 spring:
   datasource:
-    username: pdtkkixjqflcah
-    url: jdbc:postgresql://ec2-52-209-171-51.eu-west-1.compute.amazonaws.com:5432/dfsn5vr5hr2kht
-    password: c587f7361a3c90c7a0c2e0df2ac977c6381c97de0acd7d8d059a5bf03efce269
+    username: XXXX
+    url: jdbc:postgresql://XXXX
+    password: XXXX
   jpa:
     properties:
       hibernate:
